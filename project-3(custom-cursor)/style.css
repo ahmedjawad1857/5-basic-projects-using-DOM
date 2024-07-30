@@ -1,0 +1,44 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: gilroy;
+}
+
+/* Body Styling */
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: #000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: none;
+  overflow: hidden;
+}
+
+::selection {
+  background: #fff;
+  color: #000;
+}
+
+h1 {
+  text-align: center;
+  font-size: 9vw;
+  font-weight: 900;
+}
+.cursor {
+  position: absolute;
+  height: 15px;
+  aspect-ratio: 1;
+  background: #fff;
+  mix-blend-mode: difference;
+  border-radius: 50%;
+  transition: all linear 0.2s;
+}

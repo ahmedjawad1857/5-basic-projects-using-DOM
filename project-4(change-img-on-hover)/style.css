@@ -1,0 +1,58 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: gilroy;
+}
+
+/* Body Styling */
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+::selection {
+  background: #fff;
+  color: #000;
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+  background: #111;
+  color: #fff;
+  /* overflow: hidden; Prevent content from spilling out */
+  position: relative;
+}
+
+.elem {
+  height: 120px;
+  width: 100%;
+  border-bottom: 3px solid white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+
+.elem h1 {
+  font-size: 6vw;
+  position: relative;
+  z-index: 1;
+  mix-blend-mode: difference;
+}
+
+.elem img {
+  /* cursor: pointer; */
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+  opacity: 0;
+  transition: all linear 0.3s;
+}
